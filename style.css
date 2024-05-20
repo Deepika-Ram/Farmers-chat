@@ -1,0 +1,332 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+/*heade*/
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:5px 18% ;
+    border-bottom :1px solid rgba(219,219,219,1);
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+header.logo {
+    height:30px;
+}
+
+header.logo img{
+    height:100%;
+    object-fit:contain ;
+}
+
+header .searchbox{
+width:250px;
+background-color: lightgrey;
+padding: 3px 16px;
+display:flex;
+align-items: center;
+border-radius: 6px;
+border-color: black;
+}
+
+header .searchbox input{
+    height: 20 px;
+    border: none;
+    outline: none;
+    background-color: lightgrey;
+    padding-left: 8px;
+    font-size: 15px;
+    color: black;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+
+}
+
+header nav ul li{
+    margin-right:20px;
+}
+
+header nav ul li:last-child{
+    margin-right:0px;
+}
+
+header nav ul li a img{
+    width:22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header nav ul li a i{
+
+    font-size:22px;
+    color: rgb(17, 130, 17);
+}
+
+/*body section*/
+
+section{
+    padding:30px 18%;
+    background-color: #fafafa;
+    display: flex ;
+}
+
+.leftside{
+    width:65%
+}
+.story{
+    display: flex;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+
+}
+.story .stories{
+    width:17%;
+}
+.story .stories a img{
+    border-radius: 50%;
+    border:2px solid#c62d8f;
+    padding: 1px;
+    object-fit: cover;
+}
+.story .stories p{
+    width:90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#262626;
+}
+
+
+
+/*post*/
+.posts{
+    margin: 25px 0;
+    border:1px solid rgba(219,219,219,1);
+    background-color: white;
+    border-radius:3px;
+}
+.posts .posttitle{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px;
+
+}
+
+.posts .posttitle .postleft{
+    display: flex;
+    align-items: center;
+}
+.posts .posttitle .postleft .image{
+    margin-right: 15px;
+}
+
+.posts .posttitle .postleft .image img{
+    border-radius: 50%;
+    object-fit: contain;
+
+}
+
+.posts .posttitle .postleft .details .name{
+    padding-bottom: 2px;
+    font-weight: bold;
+    
+}
+
+.posts .postcontent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.posts .postfooter i{
+    color: darkgreen;
+}
+
+.posts .postfooter{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.posts .postfooter .likesharecomment i{
+    font-size: 20px;
+    margin-right: 8px;
+    padding: 5px;
+
+}
+.posts .postfooter .save{
+
+    font-size: 20px;
+    padding: 5px;
+}
+
+.posts .postfootercontent{
+    padding: 0 5px 5px 5px;
+}
+
+.posts .postfootercontent p{
+    margin-bottom: 3px;
+}
+
+.posts .postfootercontent .likes{
+    margin-bottom: 8px;
+}
+
+.posts .postfootercontent .name{
+    font-weight: 600;
+}
+
+.posts .postfootercontent span{
+    margin-left: 8px;
+    font-weight: normal;
+}
+
+.posts .postfootercontent .postingtime{
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.posts .addcomment{
+    padding: 8px;
+    border-top: 2px solid #efefef;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.posts .addcomment .leftside{
+    display: flex;
+    align-items: center;
+}
+
+.posts .addcomment .leftside i{
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+.posts .addcomment .leftside input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size:14px ;
+}
+
+
+
+
+
+.rightside{
+    width:35%;
+    margin-top: 15px;
+    /*position:static;
+   right:30;*/
+   
+
+}
+
+
+.rightside .profiletitle{
+    display: flex;
+    align-items: center;
+    
+}
+
+.rightside .profiletitle .profileleft{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.rightside .profiletitle .profileleft .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.right side .profiletitle .profileleft .details .name{
+    padding:3px ;
+}
+.suggestions
+{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.suggestions p{
+    margin-right: 90px;
+}
+.suggestions p:last-child{
+    margin-right: 0px;
+}
+.suggestiontitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.suggestiontitle .suggestionleft{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 20px;
+    padding: 0 0 20 20;
+}
+
+
+.suggestiontitle .suggestionleft .image img{
+border-radius: 50%;
+margin-right: 15px;
+}
+.suggestiontitle .suggestionleft .details .name{
+    padding-bottom: 3px;
+}
+
+/*media queries*/
+
+@media(max-width:992px){
+    header{
+        padding: 10px 20px;
+    }
+    section .leftside{
+width: 100%;
+    }
+    section .rigthside{
+        display: none;
+            }
+}
+
+@media(max-width:768px)
+{
+    header .searchbox{
+        display:none;
+    }
+    section{
+        padding:30px 20px;
+    }
+}
+
+@media(max-width:576px)
+{
+    .story .stories{
+        width:25%;
+    }
+    header nav ul li{
+        margin-right: 10px;
+
+    }
+}
